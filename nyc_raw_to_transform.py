@@ -1,4 +1,4 @@
-''''
+'''
 MIT No Attribution
 
 Copyright <YEAR> <COPYRIGHT HOLDER>
