@@ -1,4 +1,4 @@
-''''
+'''
 MIT No Attribution
 
 Copyright <YEAR> <COPYRIGHT HOLDER>
@@ -27,7 +27,7 @@ from pyspark.context import SparkContext
 ## @params: [JOB_NAME]
 args = getResolvedOptions(sys.argv, ['JOB_NAME','dag_name','task_id','correlation_id'])
 
-s3_bucket = "backetname"
+s3_bucket = "airflow-9449f8b0-631a-11ef-9521-0affe63809b1-bucket"
 
 sc = SparkContext()
 glueContext = GlueContext(sc)
