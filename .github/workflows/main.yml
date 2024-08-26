@@ -27,13 +27,13 @@ jobs:
 
     - name: Upload file1.txt to S3
       run: |
-        aws s3 cp data_pipeline.py s3://testgithubformigration/2/
+        aws s3 cp data_pipeline.py s3://airflow-9449f8b0-631a-11ef-9521-0affe63809b1-bucket/dags/
 
     - name: Upload nyc_raw_to_transform.py to S3
       run: |
-        aws s3 cp nyc_raw_to_transform.py s3://testgithubformigration/1/
+        aws s3 cp nyc_raw_to_transform.py s3://airflow-9449f8b0-631a-11ef-9521-0affe63809b1-bucket/scripts/emr/
 
     - name: Upload nyc_raw_to_transform.py to S3
       run: |
-        aws s3 cp nyc_raw_to_transform.py s3://testgithubformigration/3/
+        aws s3 cp nyc_raw_to_transform.py s3://airflow-9449f8b0-631a-11ef-9521-0affe63809b1-bucket/scripts/glue/
 
