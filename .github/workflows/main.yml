@@ -30,3 +30,7 @@ jobs:
       run: |
         aws s3 cp nyc_raw_to_transform.py s3://testgithubformigration/1/
 
+    - name: Upload nyc_raw_to_transform.py to S3
+      run: |
+        aws s3 cp nyc_raw_to_transform.py s3://testgithubformigration/3/
+
