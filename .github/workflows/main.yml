@@ -26,7 +26,7 @@ jobs:
         aws-region: us-east-1
 
     - name: Check S3_BUCKET
-      run: echo "S3_BUCKET is ${{ env.S3_BUCKET }}"
+      run: echo "S3_BUCKET is ${{ var.S3_BUCKET }}"
 
     - name: Upload file1.txt to S3
       run: |
