@@ -24,18 +24,18 @@ jobs:
 
     - name: Upload file1.txt to S3
       run: |
-        aws s3 cp data_pipeline.py s3://airflow-9449f8b0-631a-11ef-9521-0affe63809b1-bucket/dags/
+        aws s3 cp data_pipeline.py s3://${{ env.S3_BUCKET }}/dags/
 
     - name: Upload nyc_raw_to_transform.py to emr S3
       run: |
-        aws s3 cp nyc_raw_to_transform.py s3://airflow-9449f8b0-631a-11ef-9521-0affe63809b1-bucket/scripts/emr/
+        aws s3 cp nyc_raw_to_transform.py s3://${{ env.S3_BUCKET }}/scripts/emr/
 
     - name: Upload nyc_raw_to_transform.py to glue S3
       run: |
-        aws s3 cp nyc_raw_to_transform.py s3://airflow-9449f8b0-631a-11ef-9521-0affe63809b1-bucket/scripts/emr/
+        aws s3 cp nyc_raw_to_transform.py s3://${{ env.S3_BUCKET }}/scripts/emr/
 
     - name: Upload requirement to  S3
       run: |
-        aws s3 cp requirements.txt s3://airflow-9449f8b0-631a-11ef-9521-0affe63809b1-bucket/requirements/
+        aws s3 cp requirements.txt s3://${{ env.S3_BUCKET }}/requirements/
 
 
