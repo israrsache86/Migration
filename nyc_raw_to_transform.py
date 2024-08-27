@@ -27,7 +27,7 @@ from pyspark.context import SparkContext
 ## @params: [JOB_NAME]
 args = getResolvedOptions(sys.argv, ['JOB_NAME','dag_name','task_id','correlation_id'])
 
-s3_bucket = "airflow-3b204810-6474-11ef-8771-0affde276dab-bucket"
+s3_bucket = "airflow-3b204810-6474-11ef-8771-0affde276d1-bucket"
 
 sc = SparkContext()
 glueContext = GlueContext(sc)
