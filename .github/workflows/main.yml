@@ -30,18 +30,18 @@ jobs:
 
     - name: Upload pipelinefile to S3
       run: |
-        aws s3 cp data_pipeline.py s3://${{ env.S3_BUCKET }}/dags/
+        aws s3 cp data_pipeline.py s3://${{ vars.S3_BUCKET }}/dags/
 
     - name: Upload nyc_raw_to_transform.py to emr S3
       run: |
-        aws s3 cp nyc_raw_to_transform.py s3://${{ var.S3_BUCKET }}/scripts/emr/
+        aws s3 cp nyc_raw_to_transform.py s3://${{ vars.S3_BUCKET }}/scripts/emr/
 
     - name: Upload nyc_raw_to_transform.py to glue S3
       run: |
-        aws s3 cp nyc_raw_to_transform.py s3://${{ var.S3_BUCKET }}/scripts/emr/
+        aws s3 cp nyc_raw_to_transform.py s3://${{ vars.S3_BUCKET }}/scripts/emr/
 
     - name: Upload requirement to  S3
       run: |
-        aws s3 cp requirements.txt s3://${{ var.S3_BUCKET }}/requirements/
+        aws s3 cp requirements.txt s3://${{ vars.S3_BUCKET }}/requirements/
 
 
