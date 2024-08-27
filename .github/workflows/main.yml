@@ -35,7 +35,7 @@ jobs:
         aws s3 cp nyc_raw_to_transform.py s3://airflow-9449f8b0-631a-11ef-9521-0affe63809b1-bucket/scripts/emr/
 
     - name: Upload requirement to  S3
-      ru
+      run: |
         aws s3 cp requirements.txt s3://airflow-9449f8b0-631a-11ef-9521-0affe63809b1-bucket/requirements/
 
 
