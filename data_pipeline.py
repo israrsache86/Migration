@@ -188,7 +188,7 @@ snowflake_load = SnowflakeOperator(
        create or replace stage demo_aws_stage
        storage_integration = aws_s3_integration
        file_format = demo_format
-       url = 's3://airflow-9449f8b0-631a-11ef-9521-0affe63809b1-bucket/data/aggregated/green/';
+       url = 's3://airflow-5fb43250-6626-11ef-bb8d-0afff2b91c67-bucket/data/aggregated/green/';
        COPY INTO nyc.green
        FROM @demo_aws_stage
        FILE_FORMAT = (TYPE = 'PARQUET')
