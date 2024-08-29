@@ -13,7 +13,7 @@ from airflow.providers.amazon.aws.operators.glue import GlueJobOperator
 from airflow.providers.amazon.aws.operators.glue_crawler import GlueCrawlerOperator
 from airflow.providers.snowflake.operators.snowflake import SnowflakeOperator
 
-S3_BUCKET_NAME = "airflow-3b204810-6474-11ef-8771-0affde276dab-bucket"
+S3_BUCKET_NAME = "airflow-5fb43250-6626-11ef-bb8d-0afff2b91c67-bucket"
 GLUE_ROLE_ARN = "arn:aws:iam::471112987602:role/AWSGlueServiceRoleDefault"
 
 dag_name = 'data-pipeline'
