@@ -13,7 +13,7 @@ from airflow.providers.amazon.aws.operators.glue import GlueJobOperator
 from airflow.providers.amazon.aws.operators.glue_crawler import GlueCrawlerOperator
 from airflow.providers.snowflake.operators.snowflake import SnowflakeOperator
 
-S3_BUCKET_NAME = "airflow-5fb43250-6626-11ef-bb8d-0afff2b91c67-bucket"
+S3_BUCKET_NAME = "airflow-0318f320-66e7-11ef-a745-0affd4860f5b-bucket"
 GLUE_ROLE_ARN = "arn:aws:iam::471112987602:role/AWSGlueServiceRoleDefault"
 
 dag_name = 'data-pipeline'
@@ -188,7 +188,7 @@ snowflake_load = SnowflakeOperator(
        create or replace stage demo_aws_stage
        storage_integration = aws_s3_integration
        file_format = demo_format
-       url = 's3://airflow-5fb43250-6626-11ef-bb8d-0afff2b91c67-bucket/data/aggregated/green/';
+       url = 's3://airflow-0318f320-66e7-11ef-a745-0affd4860f5b-bucket/data/aggregated/green/';
        COPY INTO nyc.green
        FROM @demo_aws_stage
        FILE_FORMAT = (TYPE = 'PARQUET')
